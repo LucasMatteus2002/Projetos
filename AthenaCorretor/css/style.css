@@ -1,0 +1,146 @@
+/* CONTAINER GERAL (ALINHAMENTO À ESQUERDA) */
+body {
+    /* PROPRIEDADES PARA COR DE FUNDO */
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;  
+    /* CORREÇÃO 3: Valor inválido corrigido para uma cor de fallback */
+    background-image: url(fundoathena.jpg);
+    background-color: hwb(0 0% 100%); 
+    
+    /* CORREÇÃO 4: Remove height/width fixo para o body (pode causar barra de rolagem desnecessária) */
+    min-height: 90vh;
+}
+
+/* CONTAINER A: TITULO PRINCIPAL */
+#container-a {
+
+    /* width: 100%; é mantido para ocupar a linha */
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center; /* Garante que o texto fique à esquerda */
+    padding-bottom: 20px;
+    margin-top: 10px; 
+}
+
+h1{
+    font-size: 180px;
+    font-family: "Almendra", serif;
+    font-weight: 400;
+    background: linear-gradient(80deg, #ffffff, #ffffffb9, #792fda, #400094);
+    animation: mover 30s ease infinite;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+p{
+    font-size: 40px;
+    font-family: "Almendra", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    margin-top: -120px;
+    background: linear-gradient(100deg, #400094, #792fda, #ffffffb9, #ffffff);
+    animation: mover 40s ease infinite;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* CONTAINER B (Caixa de texto, assumindo que você ainda a use) */
+.textarea{
+    display: block;
+    width: 900px;
+    height: 250px;
+    margin: 20px auto; /* centraliza horizontalmente */
+    resize: none;
+    border: 4px solid #400094;
+    outline: none;
+    border-radius: 15px;
+    background-color: #ffffff;
+    padding: 10px;
+    font-size: 20px;
+    font-family: "Merriweather", serif;
+    color: black;
+ 
+}
+
+.botão{
+    display: block; /* ocupa a linha toda */
+    position: absolute;
+    bottom: 440px;
+    left: 1370px;    
+    padding: 5px 10px;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    background-color: #400094;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-family: 'Almendra', serif;
+    cursor: pointer;
+    transition: 0.3s
+    
+    
+}
+
+.voltar{
+    display: block; /* ocupa a linha toda */
+    position: absolute;
+    bottom: 440px;
+    left: 820px;     
+    padding: 5px 10px;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    background-color: #400094;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-family: 'Almendra', serif;
+    cursor: pointer;
+    transition: 0.3s
+}
+
+.corrigir {   
+    display: block; /* ocupa a linha toda */
+    position: absolute;
+    bottom: 440px;
+    left: 1560px;      
+    padding: 5px 10px;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    background-color: #400094;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-family: 'Almendra', serif;
+    cursor: pointer;
+    transition: 0.3s
+
+
+
+}
+
+
+/* CONTAINER A: TITULO PRINCIPAL */
+#container-a {
+    /* width: 100%; é mantido para ocupar a linha */
+    width: 90%; /* CHAVE 1: Reduza a largura para permitir que ele se mova */
+    
+    /* CHAVE 2: Use margin-left para empurrar o bloco para a direita */
+    margin-left: 5%; /* Ajuste este valor (ex: 5%) para empurrar o bloco */
+
+    /* Mantém o texto dentro do bloco centralizado, mas o bloco em si está à direita */
+    text-align: center; 
+    padding-bottom: 20px;
+    margin-top: 10px; 
+}
+
+#intro-section{
+    font-size: 14px;
+    font-family: "Almendra", serif;
+    font-optical-sizing: auto;
+    text-align: center; /*centraliza elementos de texto */
+    background: linear-gradient(100deg, #400094, #792fda, #ffffffb9, #ffffff);
+    animation: mover 40s ease infinite;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
